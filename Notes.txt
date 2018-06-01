@@ -1,0 +1,8 @@
+https://medium.com/conectric-networks/playing-with-raspberry-pi-door-sensor-fun-ab89ad499964
+
+Raspberry Pi
+Doorbell switch or wireless doorbell
+If wireless then 433 MHz reciever
+pull down resistor
+
+configure to send out notifications
