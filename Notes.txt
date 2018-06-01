@@ -6,3 +6,17 @@ If wireless then 433 MHz reciever
 pull down resistor
 
 configure to send out notifications
+
+PushBullet
+https://github.com/randomchars/pushbullet.py
+
+I have written the code which should work, i have included printing and an LED for testing however this maybe unnecessary on the final product.
+Need to setup the PI for WiFi,
+install python, pushbullet and import the code from github
+run the code and test without the notifications first
+when the led and printing works then enable notifications 
+
+su
+apt-get install python-dev
+apt-get install python-rpi.dpio
+apt-get install git
