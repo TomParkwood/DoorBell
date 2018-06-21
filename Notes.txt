@@ -10,7 +10,7 @@ configure to send out notifications
 PushBullet
 https://github.com/randomchars/pushbullet.py
 
-I have written the code which should work, i have included printing and an LED for testing however this maybe unnecessary on the final product.
+I have written the code which should work, i have included printing a line and an LED for testing however this maybe unnecessary on the final product.
 Need to setup the PI for WiFi,
 install python, pushbullet and import the code from github
 run the code and test without the notifications first
@@ -20,3 +20,7 @@ su
 apt-get install python-dev
 apt-get install python-rpi.dpio
 apt-get install git
+
+If i dont want to be intrusive with a doorbell then use a wireless one and pick up the signaling using an addon board which will get the signal and give it to the pi as if it was a physical switch
+Or solder on two wires onto the pads on the doorbell, so when the circuit is made it will act as a switch and thus trigger the pi which then will execute the code,
+which gives the led, the terminal and the notifacation service the singal to send out.
