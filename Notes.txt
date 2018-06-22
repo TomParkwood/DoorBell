@@ -1,26 +1,13 @@
-https://medium.com/conectric-networks/playing-with-raspberry-pi-door-sensor-fun-ab89ad499964
+By the look of it i don't need to use a wireless reciever.
+Just using a switch and connect the top side of the switch to GPIO 6  and the other side to ground.
+The GPIO 21 connects to the led which then has a 220 ohm resistor in line which then goes to ground.
+The ground line then connects to the ground pin on the PI.
 
-Raspberry Pi
-Doorbell switch or wireless doorbell
-If wireless then 433 MHz reciever
-pull down resistor
+Need to use the pushingbox API to send out the notifications, this was so much easier than trying with the old pushbullet api which has 0 documentation.
+Need to first create a pushbullet account and generate an api key.
+then a pushingbox account
+create a service for pushbullet and give it a name and put the api key into it.
+Create a new scenario and give it the message you want to be displayed.
+The device ID is what you want to be included in the code as the devid in data.
 
-configure to send out notifications
-
-PushBullet
-https://github.com/randomchars/pushbullet.py
-
-I have written the code which should work, i have included printing a line and an LED for testing however this maybe unnecessary on the final product.
-Need to setup the PI for WiFi,
-install python, pushbullet and import the code from github
-run the code and test without the notifications first
-when the led and printing works then enable notifications 
-
-su
-apt-get install python-dev
-apt-get install python-rpi.dpio
-apt-get install git
-
-If i dont want to be intrusive with a doorbell then use a wireless one and pick up the signaling using an addon board which will get the signal and give it to the pi as if it was a physical switch
-Or solder on two wires onto the pads on the doorbell, so when the circuit is made it will act as a switch and thus trigger the pi which then will execute the code,
-which gives the led, the terminal and the notifacation service the singal to send out.
+Please note that there is a limit of 1000 messages a day using pushingbox so dont use it for high volume messages.
