@@ -11,3 +11,13 @@ Create a new scenario and give it the message you want to be displayed.
 The device ID is what you want to be included in the code as the devid in data.
 
 Please note that there is a limit of 1000 messages a day using pushingbox so dont use it for high volume messages.
+
+
+I have created another account for a second doorbell
+Using GPIO 4 as the switch and GPIO 17 for the LED
+
+This is using tehfatpie@gmail for pushbullet and pushingbox
+
+When signing in on the PI you will need to get the one with the long string as a name setup on tomparkwood
+then tehfatpie as DoorbellTwo otherwise the sounds will be mixed up and it could cause confusion.
+Change DoorbellTwo to use dark icon, in settings General.
